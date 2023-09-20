@@ -35,6 +35,8 @@ public class Main {
 
         System.out.println(myLinkedList.findMiddleNode());
 
+        System.out.println(myLinkedList.hasLoop());
+
         // (2) Items - Returns 2 Node
         // System.out.println(myLinkedList.removeLast());
 
