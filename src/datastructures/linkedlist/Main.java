@@ -30,13 +30,22 @@ public class Main {
         // Reverse the linked list
         myLinkedList.reverse();
 
+        myLinkedList.prepend(8);
+
+        myLinkedList.prepend(10);
+        myLinkedList.prepend(5);
+
         // Prints the linked list
+        System.out.println("Before partioning :");
         myLinkedList.printList();
 
         System.out.println(myLinkedList.findMiddleNode());
 
         System.out.println(myLinkedList.hasLoop());
 
+        myLinkedList.partitionList(5);
+        System.out.println("After partioning :");
+        myLinkedList.printList();
         // (2) Items - Returns 2 Node
         // System.out.println(myLinkedList.removeLast());
 
