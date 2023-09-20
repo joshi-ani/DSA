@@ -22,16 +22,18 @@ public class Main {
         System.out.println(myLinkedList.set(3, 4));
 
         // Insert a node into linked list based on index position and value
-        myLinkedList.insert(3, 3);
+        myLinkedList.insert(3, 4);
 
         // Remove node from linked list based on index position
-        myLinkedList.remove(2);
+        // myLinkedList.remove(2);
 
         // Reverse the linked list
         myLinkedList.reverse();
 
         // Prints the linked list
         myLinkedList.printList();
+
+        System.out.println(myLinkedList.findMiddleNode());
 
         // (2) Items - Returns 2 Node
         // System.out.println(myLinkedList.removeLast());
