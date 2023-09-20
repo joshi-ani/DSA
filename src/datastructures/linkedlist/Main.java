@@ -54,6 +54,9 @@ public class Main {
         myLinkedList.removeDuplicates();
         System.out.println("After removing duplicates :");
         myLinkedList.printList();
+        myLinkedList.reverseBetween(0,3);
+        System.out.println("After reversing between list :");
+        myLinkedList.printList();
 
         // (2) Items - Returns 2 Node
         // System.out.println(myLinkedList.removeLast());
