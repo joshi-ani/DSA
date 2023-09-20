@@ -5,6 +5,9 @@ package datastructures.linkedlist;
 * In this class we have set the Node class as inner class.*
 */
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class LinkedList {
     private Node head;
     private Node tail;
@@ -254,5 +257,36 @@ public class LinkedList {
 
         // Update the head of the list
         head = dummy1.next;
+    }
+
+    public void removeDuplicates() {
+        // Create a set to store unique values
+        Set<Integer> values = new HashSet<>();
+
+        // Initialize the previous node as null
+        Node previous = null;
+
+        // Start at the head of the linked list
+        Node current = head;
+
+        // Iterate through the list until the end
+        while (current != null) {
+            // Check if the value is a duplicate
+            if (values.contains(current.value)) {
+                // Remove the current node from the list
+                previous.next = current.next;
+
+                // Decrement the list length by 1
+                length -= 1;
+            } else {
+                // Add the unique value to the set
+                values.add(current.value);
+
+                // Update previous to the current node
+                previous = current;
+            }
+            // Move to the next node in the list
+            current = current.next;
+        }
     }
 }

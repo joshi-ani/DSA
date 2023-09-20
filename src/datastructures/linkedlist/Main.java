@@ -46,6 +46,15 @@ public class Main {
         myLinkedList.partitionList(5);
         System.out.println("After partioning :");
         myLinkedList.printList();
+        myLinkedList.prepend(2);
+        myLinkedList.prepend(3);
+        myLinkedList.prepend(4);
+        System.out.println("Before removing duplicates :");
+        myLinkedList.printList();
+        myLinkedList.removeDuplicates();
+        System.out.println("After removing duplicates :");
+        myLinkedList.printList();
+
         // (2) Items - Returns 2 Node
         // System.out.println(myLinkedList.removeLast());
 
