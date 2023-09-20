@@ -46,6 +46,8 @@ public class Main {
         myLinkedList.partitionList(5);
         System.out.println("After partioning :");
         myLinkedList.printList();
+
+
         myLinkedList.prepend(2);
         myLinkedList.prepend(3);
         myLinkedList.prepend(4);
@@ -54,6 +56,8 @@ public class Main {
         myLinkedList.removeDuplicates();
         System.out.println("After removing duplicates :");
         myLinkedList.printList();
+
+
         myLinkedList.reverseBetween(0,3);
         System.out.println("After reversing between list :");
         myLinkedList.printList();
