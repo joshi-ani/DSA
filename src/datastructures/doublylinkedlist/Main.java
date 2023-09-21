@@ -37,7 +37,7 @@ public class Main {
         myLinkedList.insert(1, 2);
         myLinkedList.printListDetails();
 
-        System.out.println("Removed node: " + myLinkedList.remove(2));
+        System.out.println("Removed node value: " + myLinkedList.remove(2).value);
         myLinkedList.printListDetails();
 
     }

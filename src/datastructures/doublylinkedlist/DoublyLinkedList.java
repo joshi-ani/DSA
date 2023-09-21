@@ -181,10 +181,8 @@ public class DoublyLinkedList {
             return removeLast();
         }
         Node temp = get(index);
-        Node before = temp.prev;
-        Node after = temp.next;
-        before.next = after;
-        after.prev = before;
+        temp.prev.next = temp.next;
+        temp.next.prev = temp.prev;
         temp.next = null;
         temp.prev = null;
         length--;
