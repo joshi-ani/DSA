@@ -43,6 +43,8 @@ public class Main {
 
         System.out.println(myLinkedList.hasLoop());
 
+        System.out.println(myLinkedList.findKthFromEnd(3));
+
         myLinkedList.partitionList(5);
         System.out.println("After partioning :");
         myLinkedList.printList();
