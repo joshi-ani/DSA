@@ -36,7 +36,7 @@ public class Main {
         myLinkedList.prepend(5);
 
         // Prints the linked list
-        System.out.println("Before partioning :");
+        System.out.println("Before partitioning :");
         myLinkedList.printList();
 
         System.out.println(myLinkedList.findMiddleNode());
@@ -46,7 +46,7 @@ public class Main {
         System.out.println(myLinkedList.findKthFromEnd(3));
 
         myLinkedList.partitionList(5);
-        System.out.println("After partioning :");
+        System.out.println("After partitioning :");
         myLinkedList.printList();
 
 
